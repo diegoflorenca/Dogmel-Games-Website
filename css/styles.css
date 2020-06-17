@@ -1,0 +1,61 @@
+@font-face {
+  font-family: Ostrich;
+  src: url("../font/OSTRICHSANS-HEAVY.OTF") format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  background: #525252;
+  font-family: Ostrich;
+  color: #14c4af;
+}
+
+#wrapper {
+  background: url("../assets/background.jpg") center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+#wrapper section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.principal #slogan {
+  background: rgba(255, 0, 0, 0.2);
+  width: 30%;
+  max-width: 345px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.principal #slogan img {
+  max-height: 80vh;
+}
+
+.principal #content {
+  background: rgba(0, 128, 0, 0.2);
+  width: 70%;
+  min-width: calc(100% - 345px);
+}
+/*# sourceMappingURL=styles.css.map */

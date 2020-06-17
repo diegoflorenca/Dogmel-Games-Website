@@ -1,0 +1,54 @@
+$background-color: #525252;
+$text-color: #14c4af;
+
+@font-face {
+  font-family: Ostrich;
+  src: url("../font/OSTRICHSANS-HEAVY.OTF") format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  background: $background-color;
+  font-family: Ostrich;
+  color: $text-color;
+}
+#wrapper {
+  background: url("../assets/background.jpg") center center;
+  background-size: cover;
+  height: 100vh;
+
+  section {
+    display: flex;
+  }
+}
+.principal {
+  #slogan {
+    background: rgba($color: red, $alpha: 0.2);
+    width: 30%;
+    max-width: 345px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    img {
+      max-height: 80vh;
+    }
+  }
+
+  #content {
+    background: rgba($color: green, $alpha: 0.2);
+    width: 70%;
+    min-width: calc(100% - 345px);
+  }
+}
