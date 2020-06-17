@@ -19,24 +19,31 @@ body {
 
 body {
   background: $background-color;
+  background: url("../assets/background.jpg") center center;
+  background-attachment: fixed;
+  background-size: cover;
   font-family: Ostrich;
   color: $text-color;
 }
 #wrapper {
-  background: url("../assets/background.jpg") center center;
-  background-size: cover;
   height: 100vh;
 
   section {
     display: flex;
+    height: 100vh;
+  }
+
+  h2 {
+    font-size: 3.5em;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    text-shadow: -5px 5px 10px #000000;
   }
 }
 .principal {
   #slogan {
-    background: rgba($color: red, $alpha: 0.2);
     width: 30%;
     max-width: 345px;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: right;
@@ -47,8 +54,45 @@ body {
   }
 
   #content {
-    background: rgba($color: green, $alpha: 0.2);
     width: 70%;
     min-width: calc(100% - 345px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      max-height: 65vh;
+      transform: translateX(-18%);
+    }
+  }
+}
+
+.game {
+  flex-direction: column;
+
+  #topbar {
+    width: 100%;
+    min-height: 150px;
+    background: rgba($color: #000, $alpha: 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 55px;
+  }
+  #dan {
+    height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      max-width: 900px;
+      width: 90%;
+    }
+    h2 {
+      margin-top: 25px;
+    }
   }
 }

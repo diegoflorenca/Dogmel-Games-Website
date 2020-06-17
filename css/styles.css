@@ -17,13 +17,14 @@ body {
 
 body {
   background: #525252;
+  background: url("../assets/background.jpg") center center;
+  background-attachment: fixed;
+  background-size: cover;
   font-family: Ostrich;
   color: #14c4af;
 }
 
 #wrapper {
-  background: url("../assets/background.jpg") center center;
-  background-size: cover;
   height: 100vh;
 }
 
@@ -31,13 +32,19 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100vh;
+}
+
+#wrapper h2 {
+  font-size: 3.5em;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  text-shadow: -5px 5px 10px #000000;
 }
 
 .principal #slogan {
-  background: rgba(255, 0, 0, 0.2);
   width: 30%;
   max-width: 345px;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,8 +61,75 @@ body {
 }
 
 .principal #content {
-  background: rgba(0, 128, 0, 0.2);
   width: 70%;
   min-width: calc(100% - 345px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.principal #content img {
+  max-height: 65vh;
+  -webkit-transform: translateX(-18%);
+          transform: translateX(-18%);
+}
+
+.game {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.game #topbar {
+  width: 100%;
+  min-height: 150px;
+  background: rgba(0, 0, 0, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 55px;
+}
+
+.game #dan {
+  height: calc(100vh - 150px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.game #dan img {
+  max-width: 900px;
+  width: 90%;
+}
+
+.game #dan h2 {
+  margin-top: 25px;
 }
 /*# sourceMappingURL=styles.css.map */
