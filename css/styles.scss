@@ -1,8 +1,9 @@
 $background-color: #525252;
 $text-color: #14c4af;
-$border-color: #000000;
+$border-color: #0a7c6f;
 $bars: rgba(0, 0, 0, 0.3);
-$text-shadow: -5px 5px 10px #000000;
+$text-shadow: -3px 3px 5px #000000;
+$mobile-font-size: 1.5em;
 
 @import "./principal";
 @import "./game";

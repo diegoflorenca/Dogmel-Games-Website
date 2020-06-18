@@ -87,3 +87,68 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .bonde {
+    #logoBonde {
+      top: 2%;
+      left: 2%;
+      img {
+        min-height: 25vh;
+      }
+    }
+
+    #triangle {
+      height: 25vh;
+    }
+
+    #sloganBonde {
+      margin-top: 40vh;
+      height: 30vh;
+      img {
+        margin: 0 0 5vh 2vh;
+      }
+    }
+
+    #approved {
+      top: 12%;
+      left: 90%;
+      transform: translateX(-100%) rotate(345deg);
+      width: 150px;
+      height: 150px;
+    }
+    #crew {
+      right: 5%;
+      bottom: 0;
+      width: 90%;
+      padding: 25px;
+
+      #arrows {
+        display: none;
+      }
+
+      #people {
+        width: 100%;
+
+        #person {
+          align-items: center;
+          justify-content: flex-end;
+          div {
+            width: 100%;
+          }
+          img {
+            width: 100px;
+            height: 100px;
+          }
+          h3 {
+            font-size: $mobile-font-size;
+          }
+          p {
+            font-size: $mobile-font-size - 0.3;
+          }
+        }
+      }
+    }
+  }
+}

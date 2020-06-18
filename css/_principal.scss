@@ -22,8 +22,29 @@
     img {
       max-height: 65vh;
     }
-    h2 {
-      opacity: 100;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .principal {
+    #slogan {
+      top: 3%;
+      left: 3%;
+      img {
+        max-height: 30vh;
+      }
+    }
+    #logo {
+      img {
+        min-height: 40vh;
+      }
+      h2 {
+        margin-top: 25px;
+        text-align: center;
+        width: 60%;
+        font-size: $mobile-font-size;
+      }
     }
   }
 }

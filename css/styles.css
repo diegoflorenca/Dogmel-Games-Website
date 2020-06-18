@@ -34,8 +34,24 @@
   max-height: 65vh;
 }
 
-.principal #logo h2 {
-  opacity: 100;
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .principal #slogan {
+    top: 3%;
+    left: 3%;
+  }
+  .principal #slogan img {
+    max-height: 30vh;
+  }
+  .principal #logo img {
+    min-height: 40vh;
+  }
+  .principal #logo h2 {
+    margin-top: 25px;
+    text-align: center;
+    width: 60%;
+    font-size: 1.5em;
+  }
 }
 
 .game {
@@ -88,6 +104,11 @@
           justify-content: center;
 }
 
+.game #dan a {
+  border: none;
+  text-align: center;
+}
+
 .game #dan img {
   max-width: 900px;
   width: 90%;
@@ -95,6 +116,26 @@
 
 .game #dan h2 {
   margin-top: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .game #logoGame {
+    left: 0;
+    max-width: 50%;
+  }
+  .game #topbar {
+    padding-right: 5px;
+  }
+  .game #topbar img {
+    max-width: 50%;
+  }
+  .game #dan img {
+    max-width: 80%;
+  }
+  .game #dan h2 {
+    font-size: 1.5em;
+  }
 }
 
 .bonde {
@@ -227,6 +268,68 @@
   border: 10px rgba(0, 0, 0, 0.3) solid;
 }
 
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .bonde #logoBonde {
+    top: 2%;
+    left: 2%;
+  }
+  .bonde #logoBonde img {
+    min-height: 25vh;
+  }
+  .bonde #triangle {
+    height: 25vh;
+  }
+  .bonde #sloganBonde {
+    margin-top: 40vh;
+    height: 30vh;
+  }
+  .bonde #sloganBonde img {
+    margin: 0 0 5vh 2vh;
+  }
+  .bonde #approved {
+    top: 12%;
+    left: 90%;
+    -webkit-transform: translateX(-100%) rotate(345deg);
+            transform: translateX(-100%) rotate(345deg);
+    width: 150px;
+    height: 150px;
+  }
+  .bonde #crew {
+    right: 5%;
+    bottom: 0;
+    width: 90%;
+    padding: 25px;
+  }
+  .bonde #crew #arrows {
+    display: none;
+  }
+  .bonde #crew #people {
+    width: 100%;
+  }
+  .bonde #crew #people #person {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .bonde #crew #people #person div {
+    width: 100%;
+  }
+  .bonde #crew #people #person img {
+    width: 100px;
+    height: 100px;
+  }
+  .bonde #crew #people #person h3 {
+    font-size: 1.5em;
+  }
+  .bonde #crew #people #person p {
+    font-size: 1.2em;
+  }
+}
+
 @font-face {
   font-family: Ostrich;
   src: url("../font/OSTRICHSANS-HEAVY.OTF") format("opentype");
@@ -258,8 +361,8 @@ h3,
 p {
   font-size: 3.5em;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #000000;
-  text-shadow: -5px 5px 10px #000000;
+  -webkit-text-stroke-color: #0a7c6f;
+  text-shadow: -3px 3px 5px #000000;
 }
 
 #wrapper {
