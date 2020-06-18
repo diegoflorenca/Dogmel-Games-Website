@@ -1,0 +1,29 @@
+.principal {
+  #slogan {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    max-width: 345px;
+
+    img {
+      max-height: 80vh;
+    }
+  }
+  #logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      max-height: 65vh;
+    }
+    h2 {
+      opacity: 100;
+    }
+  }
+}

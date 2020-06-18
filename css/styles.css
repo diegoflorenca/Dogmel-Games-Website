@@ -1,162 +1,41 @@
-@font-face {
-  font-family: Ostrich;
-  src: url("../font/OSTRICHSANS-HEAVY.OTF") format("opentype");
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-html,
-body {
-  min-height: 100vh;
-}
-
-body {
-  background: #525252;
-  background: url("../assets/background.jpg") center center;
-  background-attachment: fixed;
-  background-size: cover;
-  font-family: Ostrich;
-  color: #14c4af;
-}
-
-h2,
-h3,
-p {
-  font-size: 3.5em;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #000;
-  text-shadow: -5px 5px 10px #000000;
-}
-
-#logo {
-  width: 100%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-45%, -50%);
-          transform: translate(-45%, -50%);
-  min-width: calc(100% - 345px);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  z-index: 10;
-}
-
-#logo img {
-  max-height: 65vh;
-}
-
-#logo h2 {
-  opacity: 100;
-}
-
-#logoGame {
-  width: 100%;
-  position: absolute;
-  left: 10%;
-  top: 5%;
-  -webkit-transform: translateX(-45%);
-          transform: translateX(-45%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  z-index: 10;
-}
-
-#logoGame img {
-  max-height: 35vh;
-}
-
-#logoGame h2 {
-  opacity: 0;
-  display: none;
-}
-
-#logoBonde {
-  width: 100%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-45%, -50%);
-          transform: translate(-45%, -50%);
-  min-width: calc(100% - 345px);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  z-index: 10;
-}
-
-#logoBonde img {
-  max-height: 65vh;
-  -webkit-transform: translateX(-18%);
-          transform: translateX(-18%);
-}
-
-#wrapper {
-  height: 100vh;
-  z-index: 1;
-}
-
-#wrapper section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100vh;
-}
-
 .principal #slogan {
   position: absolute;
   top: 10%;
   left: 10%;
   max-width: 345px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
 }
 
 .principal #slogan img {
   max-height: 80vh;
+}
+
+.principal #logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.principal #logo img {
+  max-height: 65vh;
+}
+
+.principal #logo h2 {
+  opacity: 100;
 }
 
 .game {
@@ -166,10 +45,20 @@ p {
           flex-direction: column;
 }
 
+.game #logoGame {
+  position: absolute;
+  left: 3%;
+  top: 5%;
+}
+
+.game #logoGame img {
+  min-height: 25vh;
+}
+
 .game #topbar {
   width: 100%;
   min-height: 150px;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.3);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -222,12 +111,24 @@ p {
           align-items: flex-start;
 }
 
+.bonde #logoBonde {
+  position: absolute;
+  left: 3%;
+  top: 5%;
+  z-index: 10;
+}
+
+.bonde #logoBonde img {
+  min-height: 50vh;
+}
+
 .bonde #triangle {
   width: 100%;
   height: 40vh;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
   -webkit-clip-path: polygon(100% 0, 0 0, 0 100%);
           clip-path: polygon(100% 0, 0 0, 0 100%);
+  z-index: 1;
 }
 
 .bonde #sloganBonde {
@@ -323,6 +224,52 @@ p {
   width: 193px;
   margin-right: 15px;
   border-radius: 50%;
-  border: 10px rgba(0, 0, 0, 0.4) solid;
+  border: 10px rgba(0, 0, 0, 0.3) solid;
+}
+
+@font-face {
+  font-family: Ostrich;
+  src: url("../font/OSTRICHSANS-HEAVY.OTF") format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  background: #525252;
+  background: url("../assets/background.jpg") center center;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Ostrich;
+  color: #14c4af;
+}
+
+h2,
+h3,
+p {
+  font-size: 3.5em;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000000;
+  text-shadow: -5px 5px 10px #000000;
+}
+
+#wrapper {
+  height: 100vh;
+}
+
+#wrapper section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
 }
 /*# sourceMappingURL=styles.css.map */

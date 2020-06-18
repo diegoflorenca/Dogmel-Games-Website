@@ -1,0 +1,38 @@
+.game {
+  flex-direction: column;
+
+  #logoGame {
+    position: absolute;
+    left: 3%;
+    top: 5%;
+
+    img {
+      min-height: 25vh;
+    }
+  }
+
+  #topbar {
+    width: 100%;
+    min-height: 150px;
+    background: $bars;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 55px;
+  }
+  #dan {
+    height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      max-width: 900px;
+      width: 90%;
+    }
+    h2 {
+      margin-top: 25px;
+    }
+  }
+}

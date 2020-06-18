@@ -1,5 +1,12 @@
 $background-color: #525252;
 $text-color: #14c4af;
+$border-color: #000000;
+$bars: rgba(0, 0, 0, 0.3);
+$text-shadow: -5px 5px 10px #000000;
+
+@import "./principal";
+@import "./game";
+@import "./bonde";
 
 @font-face {
   font-family: Ostrich;
@@ -31,199 +38,15 @@ h3,
 p {
   font-size: 3.5em;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #000;
-  text-shadow: -5px 5px 10px #000000;
-}
-
-#logo {
-  width: 100%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-45%, -50%);
-  min-width: calc(100% - 345px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  z-index: 10;
-
-  img {
-    max-height: 65vh;
-  }
-  h2 {
-    opacity: 100;
-  }
-}
-
-#logoGame {
-  width: 100%;
-  position: absolute;
-  left: 10%;
-  top: 5%;
-  transform: translateX(-45%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  z-index: 10;
-
-  img {
-    max-height: 35vh;
-  }
-  h2 {
-    opacity: 0;
-    display: none;
-  }
-}
-
-#logoBonde {
-  width: 100%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-45%, -50%);
-  min-width: calc(100% - 345px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  z-index: 10;
-
-  img {
-    max-height: 65vh;
-    transform: translateX(-18%);
-  }
+  -webkit-text-stroke-color: $border-color;
+  text-shadow: $text-shadow;
 }
 
 #wrapper {
   height: 100vh;
-  z-index: 1;
 
   section {
     display: flex;
     height: 100vh;
-  }
-}
-.principal {
-  #slogan {
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    max-width: 345px;
-    display: flex;
-    align-items: center;
-    justify-content: right;
-
-    img {
-      max-height: 80vh;
-    }
-  }
-}
-
-.game {
-  flex-direction: column;
-
-  #topbar {
-    width: 100%;
-    min-height: 150px;
-    background: rgba($color: #000, $alpha: 0.4);
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 55px;
-  }
-  #dan {
-    height: calc(100vh - 150px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    img {
-      max-width: 900px;
-      width: 90%;
-    }
-    h2 {
-      margin-top: 25px;
-    }
-  }
-}
-
-.bonde {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: flex-start;
-
-  #triangle {
-    width: 100%;
-    height: 40vh;
-    background-color: rgba($color: #000000, $alpha: 0.4);
-    clip-path: polygon(100% 0, 0 0, 0 100%);
-  }
-
-  #sloganBonde {
-    height: 60vh;
-    img {
-      height: 100%;
-      max-height: 470px;
-      margin: 50px;
-    }
-  }
-  #approved {
-    width: 325px;
-    height: 325px;
-    position: absolute;
-    bottom: 10%;
-    left: 20%;
-    transform: rotate(-15deg);
-    background: url("../assets/approvedByCaramelDog.png");
-    background-size: cover;
-  }
-  #crew {
-    width: 55%;
-    height: 70vh;
-    position: absolute;
-    right: 5%;
-    bottom: 7%;
-    display: flex;
-
-    #arrows {
-      width: 45%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    #people {
-      width: 55%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-      #person {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        div {
-          margin-right: 15px;
-        }
-        h3 {
-          font-size: 2.5em;
-          text-align: right;
-        }
-        p {
-          font-size: 1.8em;
-          text-align: right;
-        }
-        img {
-          width: 193px;
-          margin-right: 15px;
-          border-radius: 50%;
-          border: 10px rgba($color: #000, $alpha: 0.4) solid;
-        }
-      }
-    }
   }
 }
