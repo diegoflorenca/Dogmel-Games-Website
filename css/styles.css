@@ -374,5 +374,6 @@ p {
   display: -ms-flexbox;
   display: flex;
   height: 100vh;
+  overflow: hidden;
 }
 /*# sourceMappingURL=styles.css.map */
